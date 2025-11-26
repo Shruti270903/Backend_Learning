@@ -1,33 +1,24 @@
+const http= require("http");
+const fs= require("fs");
 
-const fs = require('fs');
-const http= require('http');
-const path = require('path');
 
-const server = http.createServer((req, res) => {
-    const log = `${Date.now()}:${req.url}New Request. received\n;`
- 
-    fs.appendFile('log.txt', log, (err, data)=>{
-        // res.end("Hello from the other side/server again ")
+const myServer = http.createServer((req, res)=>{
+    // console.log("new req. found");
+    // console.log(req.headers)
+    // console.log(req)
+    const log = `${Date.now()}:${req.url} New Req Received \n`;
+    fs.appendFile("log.txt", log, (err, data)=>{
+        // res.end("Hello from server again");
         switch(req.url){
-            case '/':
-                res.end("Hello from the homepage/server again ");
-                break;
-            case '/about':
-                res.end("This is the about page of the server ");
-                break;
-                case '/contact':
-                res.end("This is the contact page of the server ");
-                break;
+            case '/':res.end("homie page");
+            break;
+            case '/about': res.end("my name is shruti");
+            break;
             default:
-                res.end("404 page not found ");}
+                res.end("404");
+        }
     })
-//    console.log(req);
-    console.log("New Req. received");
-    // res.end("Hello from the other side/server again ");
-    
+    // res.end("hello from server");
 });
 
-
-server.listen(8000, ()=>{
-    console.log("Server listening on port 8000 server started ");
-});
+myServer.listen(8000, ()=> console.log("Server Started at port 1000"));
