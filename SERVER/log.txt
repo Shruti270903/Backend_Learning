@@ -1,6 +1,6 @@
-1764183425690:/about/myname=shruti&userid=1&search=dogNew Request. received
-1764183600578:/New Request. received
-1764183673654:/searchNew Request. received
-1764183834452:/New Request. received
-1764183841196:/searchNew Request. received
-1764183881395:/search?search_query=javascript+tic+tac+toeNew Request. received
+1764186187499:GET /about New Req Received 
+1764186187569:GET /favicon.ico New Req Received 
+1764186191414:GET / New Req Received 
+1764186191449:GET /favicon.ico New Req Received 
+1764186198040:GET /signup New Req Received 
+1764186198078:GET /favicon.ico New Req Received 
