@@ -1,44 +1,18 @@
-const fs = require("fs");
 const http = require("http");
-const url = require("url");
+const express = require("express");
 
-const myServer = http.createServer((req, res) => {
-  if (req.url === "/favicon.ico") return res.end();
-  const log = `${Date.now()}:${req.url}New Request. received\n`;
-  const myUrl = url.parse(req.url, true);
-  // console.log(myUrl);
-  fs.appendFile("log.txt", log, (err, data) => {
-    switch (myUrl.pathname) {
-      case "/":
-        if (req.method === "GET") res.end("home page");
-        // res.end("Hello from the homepage/server again ");
-        break;
-      case "/about":
-        const username = myUrl.query.myname;
-        res.end(`hi, ${username}`);
-        break;
-      case "/contact":
-        res.end("This is the contact page of the server ");
-        break;
-      case "/search":
-        const search = myUrl.query.search_query;
-        res.end("here are your result for" + search);
+const app = express();
 
-      case "/signup":
-        if (req.method === "GET") res.end("This is a signup form");
-        else if (req.method === "POST") {
-          //DB Query
-          res.end("Success");
-        }
-      default:
-        res.end("404 page not found ");
-    }
-  });
-  //    console.log(req);
-  console.log("New Req. received");
-  // res.end("Hello from the other side/server again ");
+app.get("/", (req, res)=>{
+  return res.send('Hello by express home page')
 });
 
-myServer.listen(8001, () => {
-  console.log("Server listening on port 8000 server started ");
+app.get("/about", (req, res)=>{
+  return res.send("Hello from About Page" + "hey you yes you " + req.query.name);
 });
+
+// const myServer = http.createServer(app);
+
+// myServer.listen(8000, ()=> console.log("Server Started"));
+
+app.listen(8000, ()=> console.log("Server started by express"));
