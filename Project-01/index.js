@@ -54,4 +54,7 @@ app.post("/api/users", (req, res) => {
   users.push(newUser);
   return res.status(201).json({ message: "User created", user: newUser });
 });
-app.listen(PORT, () => console.log("Server Started at port 8000"));
+
+
+
+app.listen(PORT, ()=> console.log("Server Started at port 8000"));
