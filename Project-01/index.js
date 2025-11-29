@@ -39,6 +39,4 @@ app.post("/api/users/:id",(req, res)=>{
 return res.json({status: "pending"});
 });
 
-
-
 app.listen(PORT, ()=> console.log("Server Started at port 8000"));
