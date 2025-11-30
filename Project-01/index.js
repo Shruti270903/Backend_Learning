@@ -4,18 +4,40 @@ const users = require("./MOCK_DATA.json");
 const app = express();
 const PORT = 6000;
 
-app.use(express.json()); // FIXED
 
+//midleware-plugin
+
+app.use(express.urlencoded({extended: false}));  //builtin middleware
+app.use(express.json()); // FIXED
+app.use((req, res, next)=>{
+  // console.log("i'm your middleware 1");
+  // res.json({msg:"hello from middleware 11"});
+    req.myUserName = "shruti.dev";
+  // return res.end("hey");
+  fs.appendFile("log.txt", `${Date.now()}: ${req.ip}: ${req.method}: ${req.path}\n `,
+(err, data)=>{
+  next();
+});
+});
+app.use((req, res, next)=>{
+  console.log("i'm your middleware 2", req.myUserName);
+  //db query
+  //credit card info
+  // req.creditCardNumber = "123";
+//  return res.end("hello 2");
+  next();
+});
 //ROUTES
 app.get("/users", (req, res) => {
   const html = `<ul>${users
     .map((user) => `<li>${user.first_name}</li>`)
-    .join("")}</ul>`;
+    .join(" ")}</ul>`;
   res.send(html);
 });
 
 //REST API
 app.get("/api/users", (req, res) => {
+  // console.log("i am in get route", req.myUserName);
   return res.send(users);
 });
 
