@@ -7,4 +7,20 @@
  1764523317921: ::1: GET: /api/users
  1764523856185: ::1: GET: /api/users
  1764524056272: ::1: POST: /api/users
+ 1764525433899: ::1: POST: /api/users
+ 1764525607744: ::1: POST: /api/users
+ 1764525627826: ::1: DELETE: /api/users/1006
+ 1764525681456: ::1: GET: /api/users
+ 1764525697340: ::1: POST: /api/users
+ 1764526099146: ::1: POST: /api/users
+ 1764526136240: ::1: POST: /api/users
+ 1764526144549: ::1: GET: /api/users
+ 1764526333312: ::1: POST: /api/users
+ 1764526349962: ::1: POST: /api/users
+ 1764526616833: ::1: POST: /api/users
+ 1764526869944: ::1: GET: /api/users/111111
+ 1764526893143: ::1: GET: /api/users/111111
+ 1764527001442: ::1: GET: /api/users
+ 1764527017892: ::1: GET: /api/users/1
+ 1764527024292: ::1: GET: /api/users/
  
