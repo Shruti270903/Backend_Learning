@@ -8,7 +8,7 @@ const PORT = 6001;
 const app = express();
 //connection
 mongoose 
-.connect("mongodb+srv://shruti:23bca85@cluster0.6oth21r.mongodb.net/yt-app-1")
+add here your connection string
 .then(()=> console.log("MongoDB Connected"))
 .catch((err)=> console.log("Mongo Error", err));
 
