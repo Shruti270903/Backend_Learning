@@ -8,7 +8,7 @@ const PORT = 6001;
 const app = express();
 //connection
 mongoose 
-.connect("mongodb+srv://shruti:23bca85@cluster0.6oth21r.mongodb.net/yt-app-1")
+.connect("add here your mongo db path or connection string")
 .then(()=> console.log("MongoDB Connected"))
 .catch((err)=> console.log("Mongo Error", err));
 
@@ -208,3 +208,4 @@ app.post("/api/users", async(req, res) => {
 });
 
 app.listen(PORT, () => console.log(`server started at ${PORT}`));
+
