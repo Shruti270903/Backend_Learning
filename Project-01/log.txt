@@ -23,4 +23,43 @@
  1764527001442: ::1: GET: /api/users
  1764527017892: ::1: GET: /api/users/1
  1764527024292: ::1: GET: /api/users/
+ 1764604527005: ::1: POST: /api/users
+ 1764604556056: ::1: POST: /api/users
+ 1764604645647: ::1: GET: /api/users/
+ 1764604661348: ::1: POST: /api/users
+ 1764604704743: ::1: POST: /api/users
+ 1764605361140: ::1: POST: /api/users
+ 1764605474824: ::1: POST: /api/users
+ 1764606404728: ::1: GET: /users
+ 1764606404858: ::1: GET: /favicon.ico
+ 1764606941311: ::1: GET: /users
+ 1764606996119: ::1: GET: /api/users/
+ 1764607339511: ::1: GET: /api/users/692dbdb1df30a680893f2d81
+ 1764607709002: ::1: GET: /api/users
+ 1764607904548: ::1: PATCH: /api/users/692dbdb1df30a680893f2d81
+ 1764607938498: ::1: PATCH: /api/users/692dbdb1df30a680893f2d81
+ 1764608107449: ::1: PATCH: /api/users/692dbdb1df30a680893f2d81
+ 1764610241854: ::1: PATCH: /api/users/692dbdb1df30a680893f2d81
+ 1764610263445: ::1: GET: /api/users
+ 1764610468233: ::1: PATCH: /api/users/692dbdb1df30a680893f2d81
+ 1764610922592: ::1: PATCH: /api/users/692dbdb1df30a680893f2d81
+ 1764611633888: ::1: GET: /api/users
+ 1764611703077: ::1: POST: /api/users
+ 1764611741439: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764612483307: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764612494993: ::1: GET: /api/users
+ 1764612548780: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764612556511: ::1: GET: /api/users
+ 1764612653695: ::1: GET: /api/users
+ 1764612744056: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764612758224: ::1: GET: /api/users
+ 1764612779854: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764612794545: ::1: GET: /api/users/692dd677a1aa77ff31780f83
+ 1764612962833: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764612973517: ::1: GET: /api/users/692dd677a1aa77ff31780f83
+ 1764612992635: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764613001195: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764613009887: ::1: PATCH: /api/users/692dd677a1aa77ff31780f83
+ 1764613483580: ::1: DELETE: /api/users/692dbe22209499800b250c39
+ 1764613500073: ::1: GET: /api/users
  
