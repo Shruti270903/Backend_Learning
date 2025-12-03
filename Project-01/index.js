@@ -10,7 +10,7 @@ const PORT = 8000;
 
 //connection
 connectMongoDb(
-  "comit ").then(() => {
+  "add your connection string here ").then(() => {
   console.log("MongoDB connected successfully");
 }).catch((err) => {
   console.log("MongoDB connection failed", err);
@@ -22,4 +22,5 @@ app.use(logReqRes("log.txt"));
 //Routes
 app.use("/api/users", userRouter);
 app.listen(PORT, () => console.log(`server started at ${PORT}`));
+
 
