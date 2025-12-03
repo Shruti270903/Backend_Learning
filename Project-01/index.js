@@ -10,7 +10,7 @@ const PORT = 8000;
 
 //connection
 connectMongoDb(
-  "mongodb+srv://shruti:23bca85@cluster0.6oth21r.mongodb.net/yt-app-1").then(() => {
+  "comit ").then(() => {
   console.log("MongoDB connected successfully");
 }).catch((err) => {
   console.log("MongoDB connection failed", err);
