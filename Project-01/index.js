@@ -22,4 +22,3 @@ app.use(logReqRes("log.txt"));
 //Routes
 app.use("/api/users", userRouter);
 app.listen(PORT, () => console.log(`server started at ${PORT}`));
-
