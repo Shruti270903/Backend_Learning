@@ -5,7 +5,7 @@ const app = express();
 const PORT = 8002;
 
 connectToMongoDB(
-  "mongodb+srv://shruti:23bca85@cluster0.6oth21r.mongodb.net/shorturl"
+  "add connection string here "
 ).then(() => console.log("Connected to MongoDB"));
 
 app.use(express.json());
@@ -30,3 +30,4 @@ app.get("/", (req, res) => {
 app.listen(PORT, () =>
   console.log(`Server is running on http://localhost:${PORT}`)
 );
+
