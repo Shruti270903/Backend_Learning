@@ -12,7 +12,7 @@ async function handleUserSignup(req, res) {
     password,
   });
   console.log("SIGNUP BODY:", req.body);
-  return res.render("home");
+  return res.render("/");
 }
 async function handleUserLogin(req, res) {
   const { email, password } = req.body;
